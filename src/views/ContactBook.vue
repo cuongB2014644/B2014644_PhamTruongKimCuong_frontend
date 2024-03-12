@@ -18,7 +18,7 @@
                 <button class="btn btn-sm btn-primary" @click="refreshList()">
                     <i class="bi bi-arrow-clockwise"></i> Làm mới
                 </button>
-                <button class="btn btn-sm btn-success" @click="goToAddContact">
+                <button class="btn btn-sm btn-success" @click="goToAddContact()">
                     <i class="fas fa-plus"></i> Thêm mới
                 </button>
                 <button
@@ -124,8 +124,9 @@ export default {
                 }
             }
         },
+        //
         goToAddContact() {
-            this.$router.push({ name: "contact.add" });
+            this.$router.push({ name: "contact.add" });//
         },
     },
     mounted() {
